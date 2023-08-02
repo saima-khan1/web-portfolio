@@ -1,0 +1,41 @@
+body{
+    text-align: center;
+    background-color: #f9f9ff;
+    color:#6e6e6e;
+}
+
+form input, form textarea{
+    width: 89%;
+    border: 0;
+    outline: none;
+    background: #bab8b8;;
+    padding: 15px;
+    margin: 15px 0;
+    color: #ffff;
+    font-size: 18px;
+    border-radius: 6px;
+}
+button{
+    display: inline-block;
+    background: #bab8b8;
+    border: solid 1px #bab8b8;
+    margin-top: 20px;
+    text-decoration: none;
+    text-decoration-color: none;
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    color: #ffff;
+}
+
+@media only screen and (min-width: 768px){
+    #login{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        align-items: center;
+        margin-top: 100px;
+    }
+
+}

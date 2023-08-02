@@ -1,0 +1,474 @@
+
+/* CSS for mobile screens */
+body{
+    font-family: sans-serif, 'Poppins';
+    background-color: #ffff;
+    color:#6e6e6e;
+    
+}
+/*Styling for Header content*/
+.header {
+    display: flex;
+    align-items: center;
+    background: #ffff;
+    width: 100%;
+  } 
+  
+  .header img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+  .container{
+    padding:10px 10% ;
+    width: 100%;
+}
+nav{
+    display: flex;
+    align-items: centre;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+nav ul {
+    background-color: #ffff;
+    position: fixed;
+    top: 0;
+    right: 0px;
+    width: 200px;
+    height: 100vh;
+    padding-top: 50px;
+    z-index: 2;
+    visibility: hidden;
+    
+}
+
+nav ul li {
+    display: block;
+    margin: 25px;
+    list-style: none;
+}
+nav ul .fa{
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    cursor: pointer;
+}
+
+.fa-bars{
+    margin-top: 20px;
+    width: 20px;
+}
+
+nav ul li a{
+  color: #6e6e6e;
+  text-decoration: none;
+  font-size: 18px;
+  position: relative;
+}
+/*Styling home section*/
+.home{
+  display: flex;
+  flex-direction: column;
+}
+.home img{
+  max-width: 100%;
+  height: auto;
+}
+.header-text h1{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.header-text h1 span{
+    color: #ff004f;
+    font-size: 50px;
+    text-shadow: 1px 4px 4px #bab8b887;
+}
+
+
+.header-text {
+    margin-top: 80px;
+    margin-left:20px;
+    margin-right: 20px;
+
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+  
+  .section {
+    padding-top: 102px;
+  }
+
+
+
+  .profile-name {
+    margin-left: 1rem;
+    padding: 0;
+    white-space: nowrap;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .title {
+    display: flex;
+    width: 100%;
+    height: 50px;
+    background: -webkit-linear-gradient(0deg, #8490ff 0%, #62bdfc 100%);
+    text-align: center;
+    justify-content: center;
+    margin-top: 20px;
+    align-items: center;
+  }
+  
+  .title h1 {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+  }
+  .image{
+    max-width: 100%;
+    height: auto;
+  }
+  /* styling for about section */
+  .section  {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    margin-top: 20px;
+    align-items: center;
+    font-weight: bold;
+    font-size: 20px;
+    /* border: solid 1px #6e6e6e; */
+  }
+  #about{
+    background-color: #8391fe26;;
+  }
+
+  .sub-title {
+    font-size: 40px;
+    font-weight: 600;
+    margin-top: 20px;
+    margin-bottom:20px;
+    margin-left: 20px;
+  }
+  
+  .card_about {
+    width: 100%;
+    height: auto;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 1.625em;
+  }
+  .about-col1{
+    display: flex;
+    justify-content: center;
+  }
+  .about-col1, .about-col2 {
+    flex-basis: 100%;
+  }
+  .about-col1 img{
+    max-width: 80%;
+    height: 80%;
+
+  }
+  .about-col2{
+    text-align: left;
+  }
+  .tab-titles {
+    display: flex;
+    margin: 20px 20px 40px;
+    flex-wrap: wrap;
+    
+  }
+  .tab-links{
+    margin-right:20px;
+    font-size: 16px;
+    font-weight: 500;
+    position:relative;
+    
+  }
+
+  .tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background-color: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s
+  }
+  .tab-links.active-link::after{
+    width: 50%;
+  }
+  ol {
+    list-style-type: none;
+    padding-left: 0;
+
+  }
+  .about-content{
+    font-size: 14px;
+    margin-left: 20px;
+    max-width: max-content;
+  }
+  #sectionContent{
+    font-size: 14px;
+    margin-left: 20px;
+  }
+/*---- styling for projects section-----*/
+.project-data{
+    display: flex;
+    flex-direction: column;
+    font-weight: 100;
+    margin-bottom: 20px;
+    border: solid 1px #6e6e6e;
+    
+   
+}
+
+
+.row-1{
+    background: -webkit-linear-gradient(0deg, #8490ff 0%, #62bdfc 100%);;
+}
+.row-2{
+    display: flex;
+    justify-content: center;
+}
+.row-2 ol{
+    line-height: 24pt;
+    font-size: 14px;
+}
+
+/*contact form*/
+#contact{
+    background-color: #8391fe26;;
+}
+.contact-row{
+  display: flex;
+  flex-direction: column;
+  /* margin-bottom: 40px;
+  margin-top: 20px; */
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 20px;
+  position: relative;
+  max-width: 840px;
+}
+
+.contact-left,.contact-right{
+    flex-basis: 100%;
+}
+
+.contact-left p{
+    margin-top: 30px;
+}
+
+.social-icons {
+    margin-top: 30px;
+}
+.social-icons a{
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: #ababab;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+
+.social-icons a:hover{
+    color: #ff004f;
+    transform: translateY(-5px);
+}
+.btn.btn2{
+    display: inline-block;
+    background: #bab8b8;
+    border: solid 1px #bab8b8;
+    margin-top: 20px;
+    text-decoration: none;
+    text-decoration-color: none;
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    color: #ffff;
+}
+.contact-right form{
+    flex-basis: 100%;
+}
+
+form input, form textarea{
+    width: 89%;
+    border: 0;
+    outline: none;
+    background: #bab8b8;;
+    padding: 15px;
+    margin: 15px 0;
+    color: #ffff;
+    font-size: 18px;
+    border-radius: 6px;
+}
+.contact-title{
+    font-size: 40px;
+    font-weight: 600;
+}
+/*Styling for footer */
+.footer{
+  display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+
+}
+.copyright{
+  margin-top: 20px;
+    margin-bottom:20px;
+  
+}
+  /* CSS for tablet screens */
+  
+  @media only screen and (min-width: 768px) {
+
+/*styling for about header*/
+    .container{
+        padding:10px 10% ;
+        width: 100%;
+        /* margin-top: 20px; */
+    }
+    .container nav{
+      align-items: center;
+    }
+    nav ul {
+        background: #ffff;
+        position: inherit;
+        width: 100%;
+        height: auto;
+        padding-top: 0px;
+        visibility: visible;
+        display: contents;
+    }
+    nav ul li{
+        display: inline-block;
+        list-style: none;
+        margin: 10px 20px;
+    }
+    nav ul li a{
+        color: #6e6e6e;
+        text-decoration: none;
+        font-size: 18px;
+        position: relative;
+    }
+    nav ul li a::after{
+        content: '';
+        width: 0;
+        height: 3px;
+        background: #ff004f;
+        position: absolute;
+        left: 0;
+        bottom: -6px;
+        transition: 0.5s;
+
+    }
+    nav ul li a:hover::after {
+        width: 100%;    
+    }
+    nav .fa{
+        display: none;
+    }
+
+    /*styling for home page*/
+
+    .home{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    .home img{
+      max-width: 100%;
+      height: auto;
+    }
+    .header-text{
+      margin-left: 100px;
+    }
+    .image{
+      display: flex;
+      max-width: 50%;
+      height: auto;
+      align-items: center;
+
+    }
+  /*styling for about section*/
+    .card_about {
+        display: flex;
+      flex-direction: row;  
+      width: 100%;
+      text-align: center;
+      margin-right: 20px;
+      margin-left: 20px;
+      margin-top: 20px;
+    }
+    .tab-titles {
+        display: flex;
+        flex-wrap: nowrap;
+      }
+    .tab-links{
+        margin-right:50px;
+        font-size: 18px;
+        font-weight: 500;
+        cursor: pointer;
+      }
+    .section p {
+      font-size: 16px;
+    }
+    #sectionContent{
+        font-size: 16px;
+      }
+      /*-----Project data---*/
+      .project-data{
+        display: flex;
+        font-weight: 100;
+        margin: 20px;
+        /* margin-left: 10px;
+        margin-right: 42px; */
+        flex-basis: 30%;
+        min-width: 339px
+    }
+    .project-details{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        margin: 10px;
+    }
+    .row-2 ol{
+        line-height: 24pt;
+        font-size: 16px;
+    }
+    /*contact form*/
+    .contact-left,.contact-right{
+        flex-basis: 100%;
+    }
+    .contact-left{
+        text-align: left;
+        margin-left: 40px;
+    }
+    .contact-row{
+        display: flex;
+        flex-direction: row;
+    }
+    .contact-title{
+        font-size: 40px;
+    }
+  }
+
+
+  

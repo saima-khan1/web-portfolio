@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Saima Khan</title>
+    <link rel="stylesheet" href="./style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="header" id="header"></div>
+    </header>
+    <div class="home" id="home">
+      <div class="header-text">
+        <p>Fullstack Web developer</p>
+        <h1>Hi, I'm <span>Saima khan</span> Welcome to my web portfolio.</h1>
+        <p>
+          I am passionate about developing web pages & I am undergoing FullStack
+          Web Development training @Foocoding Malmö.
+        </p>
+        <p>please scroll below to read more about me and my work</p>
+      </div>
+      <div class="image"><img src="/images/fs1.png" alt="" /></div>
+    </div>
+
+    <main>
+      <section class="section" id="about"></section>
+      <section class="section" id="projects">
+        <div class="projects-title"><h1>My Recent Projects</h1></div>
+        <div class="project-details" id="details"></div>
+      </section>
+      <section class="section" id="contact"></section>
+    </main>
+    <footer class="footer">
+      <div class="copyright">
+        <p>Copyright © 2023, All rights reserved by Saima Khan</p>
+      </div>
+    </footer>
+    <script src="./fetchAboutMe.js"></script>
+    <script src="./fetchProject.js"></script>
+    <script src="./contactMe.js"></script>
+    <script src="./header.js"></script>
+    <script type="module" src="./uniqueIdentifier.js"></script>
+    <!-- new changes added -->
+    <script src="dist/bundle.js"></script>
+  </body>
+</html>
