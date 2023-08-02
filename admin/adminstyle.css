@@ -1,0 +1,236 @@
+body{
+    text-align: center;
+    background-color: #f9f9ff;
+    color:#6e6e6e;
+    font-family: sans-serif, 'Poppins';
+}
+
+.header nav ul li{
+    list-style: none;
+}
+.header{
+    display :flex;
+    width: 100%;
+    justify-content: space-between;
+    /* background: -webkit-linear-gradient(0deg, #8490ff 0%, #62bdfc 100%); */
+    background: #8391fe26;
+}
+.header h1{
+    font-size: 18px;
+    margin: 20px;
+}
+.header nav ul{
+    margin: 20px;
+    text-align: center;
+    padding-top: 0px;
+}
+.options li{
+    list-style: none;
+    margin-top: 20px;
+    margin: 20px;
+    font-size: larger;
+    color: #6e6e6e;
+    cursor: pointer;
+}
+
+
+
+form input, form textarea{
+    width: 89%;
+    border: 0;
+    outline: none;
+    background: #bab8b8;;
+    padding: 15px;
+    margin: 15px 0;
+    color: #6e6e6e;
+    font-size: 18px;
+    border-radius: 6px;
+}
+button{
+    display: inline-block;
+    background: #8391fe26;
+    border: solid 1px #8391fe26;
+    margin-top: 20px;
+    text-decoration: none;
+    text-decoration-color: none;
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    
+}
+
+.option-section{
+    display: none;
+}
+.options{
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+    justify-content: space-evenly;
+    background-color: #8391fe26;
+    /* margin:20px; */
+    margin-top: 20px;
+    align-content: center;
+}
+.container{
+    max-width: 100%;
+    flex-basis: 100%;
+    margin-top: 20px;
+}
+.message-container {
+    background-color: #8391fe26;
+    border: 1px solid #8391fe26;;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 100%;
+    text-align: left;
+  }
+  
+  .message-header h2 {
+    font-size: 18px;
+    margin: 0;
+  }
+  
+  .message-header p {
+    font-size: 14px;
+    margin: 5px 0;
+  }
+  
+  .message-header p.email {
+    font-weight: bold;
+  }
+  
+  .message-content {
+    display: none;
+  }
+  
+  .message-content.expanded {
+    display: block;
+  }
+  
+  .message-read {
+    cursor: pointer;
+    color: #007bff;
+    text-decoration: underline;
+  }
+  form input, form textarea {
+    width: 89%;
+    border: 0;
+    outline: none;
+    background: #8391fe26;
+    padding: 15px;
+    margin: 15px 0;
+
+
+    font-size: 18px;
+    border-radius: 6px;
+  }
+  /* styling dashboard*/
+  .dashbord-cards{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .cards{
+    margin: 20px;
+    flex-basis: 100%;
+    background: #8391fe26;
+    border-radius: 10px;
+    min-width: 250px;
+  }
+  .card-heading{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .text{
+    text-align: left;
+    margin-left:10px;
+
+  }
+  .value{
+    font-weight: 700;
+    font-size: xxx-large;
+  }
+  .tab-links {
+    margin-right: 20px;
+    font-size: 16px;
+    font-weight: 500;
+    position: relative;
+    cursor: pointer; /* Add this to make it more obvious that it's clickable */
+}
+
+.tab-links::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background-color: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+
+.tab-links.active-link::after {
+    width: 100%; /* Change this to 100% to have the line extend to the full width of the tab */
+}
+/*Styling for footer */
+.footer{
+    display: block;
+      margin-block-start: 1em;
+      margin-block-end: 1em;
+      margin-inline-start: 0px;
+      margin-inline-end: 0px;
+      text-align: center;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+  
+  }
+  .copyright{
+    margin-top: 20px;
+      margin-bottom:20px;
+    
+  }
+
+
+
+@media only screen and (min-width: 768px){
+    main{
+        display: flex;
+        justify-content: space-around;
+    }
+    .options{
+    display: flex;
+    flex-direction: column;
+    justify-content: initial;
+   max-width: 300px;
+    align-items: baseline;
+    height: 100vh;
+    align-content: center;
+}
+    .options li{
+        list-style: none;
+        margin-top: 55px;
+        font-size: larger;
+        cursor: pointer;
+        margin-bottom: 1px;
+    }
+    .container{
+        margin: 40px;
+
+    }
+    .dashbord-cards{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+    .cards{
+        margin: 20px;
+        flex-basis: 29%;
+        min-width: 250px;
+      }
+
+}
