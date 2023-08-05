@@ -55,13 +55,11 @@ app.get('/', (req, res) => {
 });
 
 app.get('/admin', (req, res) => {
-  //res.setHeader('Access-Control-Allow-Origin', 'http://127.0.0.1:5501');
   res.sendFile('admin.html', { root: __dirname });
 });
 
 // Fetch about content
 app.get('/api/about', async (req, res) => {
-  //res.setHeader('Access-Control-Allow-Origin', 'http://127.0.0.1:5501');
   res.setHeader('Access-Control-Allow-Methods', 'GET');
   res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
   try {
@@ -85,7 +83,6 @@ app.get('/api/about', async (req, res) => {
 });
 
 app.get('/api/projects', async (req, res) => {
-  //res.setHeader('Access-Control-Allow-Origin', 'http://127.0.0.1:5501');
   res.setHeader('Access-Control-Allow-Methods', 'GET');
   res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
   try {

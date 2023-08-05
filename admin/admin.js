@@ -1,13 +1,3 @@
-//DOM manipulation for options Lis
-// const options = document.getElementById('options');
-// // options.innerHTML=`
-// // <li onclick="toggleSection('dashbord')" class="tab-links active-link">Dashboard</li>
-// // <li onclick="toggleSection('addProject')" class="tab-links">Add Project</li>
-// // <li onclick="toggleSection('removeProject')" class="tab-links">Remove Project</li>
-// // <li onclick="toggleSection('updateAboutMe')" class="tab-links">Update About Me</li>
-// // <li onclick="toggleSection('messages')" class="tab-links">Messages</li>`;
-// // toggleSection('dashbord');
-
 document.addEventListener('DOMContentLoaded', function () {
   const options = document.getElementById('options');
   options.innerHTML = `
