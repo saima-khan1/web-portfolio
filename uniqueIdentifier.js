@@ -1,4 +1,3 @@
-// uniqueIdentifier.js
 import { v4 as uuidv4 } from 'https://cdn.skypack.dev/uuid';
 
 // Function to generate a unique identifier (UUIDv4)
@@ -13,7 +12,7 @@ let uniqueId =
 // If the unique identifier is not set, generate a new one and store it
 if (!uniqueId) {
   uniqueId = generateUniqueId();
-  sessionStorage.setItem('uniqueId', uniqueId); // Use localStorage if you want it to persist across sessions
+  sessionStorage.setItem('uniqueId', uniqueId);
 }
 
 // Send a request to the backend with the unique identifier

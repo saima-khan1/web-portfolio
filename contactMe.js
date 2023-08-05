@@ -18,7 +18,7 @@ contactLeft.innerHTML = `
 
 
 </div>
-<a href="path/to/your/cv.pdf" download>
+<a href="./CV/Saima_Khan.pdf" download>
   <button class="btn btn2"> Download CV <i class="fa fa-download"></i></button>
 </a>
 
